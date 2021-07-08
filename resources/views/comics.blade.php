@@ -18,10 +18,11 @@
                         <h4>Description</h4>
                         <p>{{ $book['description'] }}</p>
 
-
                     </div> -->
                 </div>
             @endforeach
+            <button class="button">Load More</button>
     </div>
+
 
 @endsection

@@ -148,6 +148,15 @@ main .container .card:hover img {
 main .container .card:hover .details {
   display: block;
 }
+main .button {
+  margin: 1rem auto 0;
+  border-style: none;
+  padding: 0.5rem 3rem;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #0282f9;
+}
 
 #site_footer {
   height: 200px;
