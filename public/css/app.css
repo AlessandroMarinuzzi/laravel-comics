@@ -133,14 +133,16 @@ main .container .card > img {
   height: 180px;
   -o-object-fit: cover center;
      object-fit: cover center;
+  margin: auto;
 }
 main .container .card .details {
+  font-size: 13px;
   display: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   color: white;
-  padding: 10px;
+  padding: 15px;
 }
 main .container .card:hover img {
   filter: brightness(0.3);
