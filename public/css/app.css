@@ -165,6 +165,7 @@ main .button {
 
 .id_comic {
   color: white;
+  position: relative;
 }
 .id_comic .details {
   display: flex;
@@ -174,6 +175,15 @@ main .button {
 }
 .id_comic .description {
   margin-top: 20px;
+}
+.id_comic .description h4 {
+  margin-bottom: 20px;
+}
+.id_comic .ad {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 3rem;
 }
 
 #site_main .features {

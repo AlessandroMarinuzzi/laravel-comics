@@ -22,8 +22,13 @@
         </div>
 
         <div class="description">
-            <h4>Description</h4>
+            <h4>Description:</h4>
             <p>{{ $comic['description'] }}</p>
+        </div>
+
+        <div class="ad">
+            <h4>Advertisment</h4>
+            <img src="{{asset('img/adv.jpg')}}" alt="">
         </div>
                     
     </div>

@@ -1,5 +1,6 @@
 .id_comic{
     color: white;
+    position: relative;
     .details{
         display: flex;
         flex-direction: column;
@@ -8,5 +9,15 @@
     }
     .description{
         margin-top: 20px;
+        h4{
+            margin-bottom: 20px;
+        }
+    }
+
+    .ad{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 3rem;
     }
 }
