@@ -1,4 +1,118 @@
 #site_footer {
-    height: 200px;
-    background-color: rgb(48, 130, 0);
+    background-image: url("../img/footer-bg.jpg");
+    font-size: 13px;
+    color: lightgrey;
+
+    > .container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 40px 0;
+        background-image: url("../img/dc-logo-bg.png");
+        background-repeat: no-repeat;
+        background-position: right;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+            &:hover {
+                color: $primary_color_header;
+            }
+        }
+
+        .menus {
+            display: flex;
+
+            .footer_menu:first-child {
+                li:last-child {
+                    .footer_menu {
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            .footer_menu {
+                list-style-type: none;
+    
+                .menu_heading {
+                    font-size: 20px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial, sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+    
+                li {
+                    margin: 4px 0;
+                }
+            }
+
+            > .footer_menu {
+                margin-right: 30px;
+            }
+        }
+
+
+        .disclaimer {
+            margin-top: 20px;
+
+            a {
+                color: $primary_color_header;
+            }
+        }
+    }
+
+    .call-to-action {
+        padding: 20px 0;
+        background-color: grey;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+
+            button {
+                color: white;
+                border: 2px solid $primary_color_header;
+                padding: 15px 10px;
+                background-color: transparent;
+                cursor: pointer;
+                font-size: 16px;
+                font-weight: bold;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: $primary_color_header;
+                }
+            }
+
+            .social {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+
+                a {
+                    img {
+                        transition: filter 0.25s;
+                    }
+
+                    &:hover {
+                        img {
+                            filter: brightness(80%);
+                        }
+                    }
+                }
+    
+                span {
+                    font-size: 20px;
+                    color: $primary_color_header;
+                    font-family: "Greta Sans Condensed Bold", "Greta Sans Bold", Arial, sans-serif;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
 }
