@@ -122,7 +122,6 @@ main .container h1 {
   margin: 3rem 0;
 }
 main .container .card {
-  width: calc(100% / 5 - 20px);
   margin: 1rem 10px;
   display: flex;
   flex-direction: column;

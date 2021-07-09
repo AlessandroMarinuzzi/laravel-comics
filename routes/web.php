@@ -21,15 +21,9 @@ Route::get('/characters', function () {
 
 //comics
 Route::get('/', function () {
-    $comics= config('comics');
-    $comics_collection = collect($comics);
-    $comics_book = $comics_collection->where('type', 'comic book');
-    //dd($comics_book);
+    $comics = config("comics");
 
-    $data = [
-        'comics_book' => $comics_book,
-    ];
-    return view('comics', $data);
+    return view("comics", compact("comics"));
 })->name('comics');
 
 //movies
