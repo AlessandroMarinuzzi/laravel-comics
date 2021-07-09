@@ -1,0 +1,12 @@
+.id_comic{
+    color: white;
+    .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    .description{
+        margin-top: 20px;
+    }
+}

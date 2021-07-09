@@ -23,8 +23,14 @@ Route::get('/characters', function () {
 Route::get('/', function () {
     $comics = config("comics");
 
-    return view("comics", compact("comics"));
+    return view("comics.index", compact("comics"));
 })->name('comics');
+
+Route::get("/comics/{id}", function($id) {
+    $comics = config("comics");
+
+    return view("comics.comic", compact("comics"));
+})->name("comic");
 
 //movies
 Route::get('/movies', function () {
