@@ -1,10 +1,6 @@
 @extends("layout\app")
 
-@php
-    $uri = $_SERVER["REQUEST_URI"];
-    $id = $uri[strlen($uri) - 1];
-    $comic = $comics[$id];
-@endphp
+
 
 @section("title", $comic["title"])
 
@@ -20,11 +16,15 @@
             <p> <strong>Sale Date:</strong> {{ $comic['sale_date'] }} </p>
             <p> <strong>Price:</strong> {{ $comic['price'] }} </p>
         </div>
-
+        
+        
         <div class="description">
             <h4>Description:</h4>
             <p>{{ $comic['description'] }}</p>
         </div>
+        
+        <button><a href="#">Buy It</a></button>
+        <button><a href="{{route('comics')}}">View Gallery</a></button>
 
         <div class="ad">
             <h4>Advertisment</h4>

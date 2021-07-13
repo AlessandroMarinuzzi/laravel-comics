@@ -179,6 +179,18 @@ main .button {
 .id_comic .description h4 {
   margin-bottom: 20px;
 }
+.id_comic button {
+  border-style: none;
+  background-color: #0282f9;
+  padding: 0.5rem 2rem;
+  margin: 15px 5px 0 5px;
+}
+.id_comic button a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
 .id_comic .ad {
   position: absolute;
   top: 0;
